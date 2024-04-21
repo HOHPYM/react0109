@@ -1,0 +1,35 @@
+.item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .riddle {
+    background-color: #d2f5d8; /* Зеленый фон */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .riddle p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #146b34; /* Темно-зеленый цвет для текста */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 16px;
+    color: #146b34; /* Темно-зеленый цвет для текста вариантов ответов */
+    margin-bottom: 5px;
+  }
+  
+  .correct-answer {
+    color: #2d882d; /* Зеленый цвет для правильного ответа */
+    font-weight: bold;
+  }
+  
