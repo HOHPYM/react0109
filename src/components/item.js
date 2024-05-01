@@ -1,39 +1,8 @@
 import React, { useState } from 'react';
 import './item.css';
 
-const Item = () => {
+const Item = ({ questions }) => {
   const [selectedAnswers, setSelectedAnswers] = useState({});
-
-  const riddles = [
-    {
-      id: 1,
-      description: "Сколько ног у улитки?",
-      option1: "2",
-      option2: "4",
-      option3: "0",
-      option4: "1",
-      correct: 3
-    },
-    
-    {
-      id: 2,
-      description: "Что можно сломать, называя его?",
-      option1: "Тишину",
-      option2: "Яйцо",
-      option3: "Стекло",
-      option4: "Сердце",
-      correct: 4
-    },
-    {
-      id: 3,
-      description: "Что всегда уходит вместе с вами, но никогда не возвращается?",
-      option1: "Мысли",
-      option2: "Деньги",
-      option3: "Время",
-      option4: "Сон",
-      correct: 3
-    },
-  ];
 
   const handleAnswerClick = (id, option) => {
     setSelectedAnswers(prevState => ({
@@ -44,7 +13,7 @@ const Item = () => {
 
   return (
     <div className="item-container">
-      {riddles.map(riddle => (
+      {questions.map(riddle => (
         <div key={riddle.id} className="riddle">
           <p>{riddle.description}</p>
           <ul>
